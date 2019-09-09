@@ -1,2 +1,8 @@
 server:
   port: 8888
+
+spring:
+  datasource:
+    url: jdbc:mysql://47.110.35.12:3306/test
+    username: wzf
+    password: 1990/0816*Wzf
