@@ -1,14 +1,19 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.service.ITest;
 
-@RestController
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
 public class HelloWorld {
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String Hello(String name) {
-        return "Hello " + name;
+    @Autowired
+    private ITest iTest;
+
+    @RequestMapping(value = "/")
+    public String Hello() {
+        return iTest.test();
     }
 }
