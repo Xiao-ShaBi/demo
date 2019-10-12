@@ -1,0 +1,336 @@
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+    font-weight: 500;
+}
+
+.col {
+    color: #696EFE;
+}
+
+.bg-color {
+    background-color: #696EFE;
+}
+
+.fb {
+    font-weight: bold;
+}
+
+
+#app {
+    height: 100%;
+}
+
+.fillcontain {
+    height: 100%;
+    width: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.padding-content {
+    padding: 4px 0;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+.pt-5 {
+    padding-top: 5px;
+}
+.p-b5 {
+    padding-bottom: 5px;
+}
+.pr-10 {
+    padding-right: 10px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inline-block {
+    display: block;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+/* END全局统一样式 */
+
+/* 主体样式 */
+.head-top{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.head-container{
+    height: 60px;
+    background:linear-gradient(45deg,rgba(40,118,244,1) 0%,rgba(39,146,242,1) 100%);
+    display: flex;
+}
+.head-middle{
+    flex: 1;
+}
+.head-left{
+    width:24%;
+    background-image: url(../imgs/bj_l.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:right;
+}
+.head-left span{
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+.head-right{
+    width:24%;
+    background-image: url(../imgs/bj_r.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.head-right img{
+    width: 100px;
+    float: right;
+    padding: 5px;
+}
+.menu-box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 60px;
+    color: #FFF;
+}
+.menu-box li{
+    width: 100px;
+    opacity: 0.5;
+}
+.menu-box li a{
+    height: 60px;
+    padding-top: 5px;
+}
+.menu-box li a img{
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.menu-li-focus{
+    opacity: 1!important;
+}
+.img-box{
+    height: 26px;
+}
+.app-content{
+    padding-top: 60px;
+}
+#iframe_main{
+    width: 100%;
+    min-height: 700px;
+    border: none;
+}

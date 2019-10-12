@@ -1,0 +1,181 @@
+.bg-secondary {
+    background-color: #2876F4;
+}
+
+.btn-secondary {
+    background-color: #2876F4;
+    border-color: #2876F4;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.modal-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content-box {
+    padding-top: 40px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.close {
+    font-size: 14px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    width: 60px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+.time_fliter{
+    font-size: 16px;
+    color: #979797!important;
+    border-radius:0!important;
+    
+}
+.time_fliter:hover{
+    background: #ebe8e8;
+}
+.btn_reason_filter{
+    font-size: 16px;
+    color: #979797!important;
+    border-radius:0!important;
+}
+.btn_reason_filter:hover{
+    background: #ebe8e8;
+}
+.time_fliter_focus {
+    border-radius:0!important;
+    color: #000 !important;
+    border-bottom: 2px solid  #2876F4;
+}
+
+.head-box {
+    background: #2876F4;
+    height: 40px;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.head-title {
+    width: 200px;
+}
+
+.head-text {
+    width: 100px;
+    text-align: right;
+}
+
+.head-logo {
+    padding: 0 5px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.text-space {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.head-logo img {
+    width: 30px;
+}
+.head-box:after {
+  content: '';
+  width: 100%;
+  background-image: url(./imgs/top-bj.png);
+  position: absolute;
+  height: 40px;
+  width: calc(100% - 40px);
+  z-index:-1;
+}
+.showBox-title {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.aside-box{
+    width: 200px;
+    height: 450px;
+    overflow-y: auto;
+    padding: 5px 10px;
+    border-right: 1px solid #dee2e6;
+}
+#showBox_count{
+    color: red;
+}
+.aside-other{
+    margin-left: 200px;
+}
+#showBox_head th{
+    font-size: 14px;
+    line-height: 14px;
+}
+#showBox tr{
+    line-height: 14px;
+
+}
+.bk-color{
+    background-color: #eaa748;
+}
+/* .table-responsive{
+    height: 540px;
+} */
+.none{
+    display: none;
+}
+.pagination li{ 
+    margin-right: 18px;
+    cursor: pointer;
+}
+.pagination .active{
+    color: #2876F4 !important;
+
+}
+.btn-operate{
+    color: #2876F4!important;
+}

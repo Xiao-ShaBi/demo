@@ -13,4 +13,9 @@ public class HelloWorld {
     public String Hello() {
         return "index";
     }
+
+    @RequestMapping(value = "/index")
+    public String zhangning() {
+        return "uj-termial/index";
+    }
 }
